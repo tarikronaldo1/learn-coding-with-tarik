@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM Interactif</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>QCM Interactif</h1>
+    <div id="score" class="hidden">Score: 0</div>
+    <div id="timer">Temps restant: <span id="time">30</span> secondes</div>
+
+    <div id="quiz">
+        <div class="question" data-answer="B">
+            <p>Quelle est la capitale de la France ?</p>
+            <label><input type="radio" name="q1" value="A"> Lyon</label>
+            <label><input type="radio" name="q1" value="B"> Paris</label>
+            <label><input type="radio" name="q1" value="C"> Marseille</label>
+            <div class="buttons">
+                <button class="next-button" onclick="nextQuestion()">Suivant</button>
+                <button class="end-button" onclick="endQuiz()">Terminer</button>
+            </div>
+        </div>
+        <div class="question" data-answer="A">
+            <p>Combien font 2 + 2 ?</p>
+            <label><input type="radio" name="q2" value="A"> 4</label>
+            <label><input type="radio" name="q2" value="B"> 5</label>
+            <label><input type="radio" name="q2" value="C"> 6</label>
+            <div class="buttons">
+                <button class="next-button" onclick="nextQuestion()">Suivant</button>
+                <button class="end-button" onclick="endQuiz()">Terminer</button>
+            </div>
+        </div>
+        <div class="question" data-answer="C">
+            <p>Quel est le plus grand océan du monde ?</p>
+            <label><input type="radio" name="q3" value="A"> Atlantique</label>
+            <label><input type="radio" name="q3" value="B"> Indien</label>
+            <label><input type="radio" name="q3" value="C"> Pacifique</label>
+            <div class="buttons">
+                <button class="next-button" onclick="nextQuestion()">Suivant</button>
+                <button class="end-button" onclick="endQuiz()">Terminer</button>
+            </div>
+        </div>
+        <div class="question" data-answer="B">
+            <p>Qui a écrit "Les Misérables" ?</p>
+            <label><input type="radio" name="q4" value="A"> Gustave Flaubert</label>
+            <label><input type="radio" name="q4" value="B"> Victor Hugo</label>
+            <label><input type="radio" name="q4" value="C"> Émile Zola</label>
+            <div class="buttons">
+                <button class="next-button" onclick="nextQuestion()">Suivant</button>
+                <button class="end-button" onclick="endQuiz()">Terminer</button>
+            </div>
+        </div>
+        <div class="question" data-answer="A">
+            <p>Quelle planète est la plus proche du Soleil ?</p>
+            <label><input type="radio" name="q5" value="A"> Mercure</label>
+            <label><input type="radio" name="q5" value="B"> Vénus</label>
+            <label><input type="radio" name="q5" value="C"> Mars</label>
+            <div class="buttons">
+                <button class="next-button" onclick="nextQuestion()">Suivant</button>
+                <button class="end-button" onclick="endQuiz()">Terminer</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"> 
+    </script>
+</body>
+</html>
